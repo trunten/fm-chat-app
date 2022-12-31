@@ -44,7 +44,7 @@ body {
 }
 
 .app-container {
-    width: 380px;
+    width: 376px;
     background-color: var(--White);
     border-radius: 40px;
     padding: 15px;
@@ -61,6 +61,15 @@ body {
     color: white;
     border-radius: 35px 35px 5px 5px;
     padding: 20px;
+}
+
+.cutout {
+    height: 35px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    margin: -34px auto 15px;
+    border-radius: 0 0 20px 20px ;
 }
 
 .chat-header-content {
@@ -153,4 +162,12 @@ body {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: var(--Grayish-Blue);
+}
+
+.chat-footer-content i {
+    font-size: 35px;
+    margin: -8px -5px;
+    color: black;
 }
