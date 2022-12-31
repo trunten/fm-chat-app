@@ -5,47 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Chat App</title>
 </head>
 <body>
-
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="grid-container">
+    <div class="app-container">
+        <div class="app">
+          <div class="chat-header">
+            <div class="chat-header-content">
+              <span class="icon">&lt;</span>
+              <img src="./assets/images/avatar.jpg" alt="avatar" class="avatar">
+              <div>
+                <p>Samuel Green</p>
+                <p class="small-text">Available to Walk</p>
+              </div>
+              <span class="icon">:</span>
+            </div>
+          </div>
+          <div class="chat-body">
+            <p class="chat-item chat-bubble chat-left">That sounds great. I’d be happy with that.</p>
+            <p class="chat-item chat-bubble chat-left">Could you send over some pictures of your dog, please?</p>
+            <div class="chat-item chat-image chat-right">
+              <img src="./assets/images/dog-image-1.jpg" alt="Dog picutre">
+              <img src="./assets/images/dog-image-2.jpg" alt="Dog picutre">
+              <img src="./assets/images/dog-image-3.jpg" alt="Dog picutre">
+            </div>
+            <p class="chat-item chat-bubble chat-right">Here are a few pictures. She’s a happy girl!</p>
+            <p class="chat-item chat-bubble chat-right">Can you make it?</p>
+            <p class="chat-item chat-bubble chat-left">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+            <p class="chat-item chat-bubble chat-left chat-option">30 minute walk <span class="price">$29</span></p>
+            <p class="chat-item chat-bubble chat-left chat-option">1 hour walk <span class="price">$49</span></p>
+          </div>
+          <div class="chat-footer">
+            <p>Type a message…</p>
+            <span class="icon">&gt;</span>
+          </div>
+        </div>
+    </div>
+    <div class="main-content">
+      <h1>Simple booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.
+      </p>
+    </div>
   </div>
 </body>
 </html>
