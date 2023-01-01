@@ -29,6 +29,7 @@
 
 body {
     font-family: "Rubik", sans-serifx;
+    /* width: 1440px; */
 }
 
 .grid-container {
@@ -192,7 +193,7 @@ body {
     width: 500px;
     background-image: linear-gradient(to top, var(--Light-Violet), var(--Light-Magenta));
     top: 0;
-    margin-left: -15rem;
+    left: -10em;
     border-radius: 0 0 250px 250px;
     z-index: -10;
 }
@@ -223,7 +224,7 @@ body {
 
     #purple-thing {
         height: 500px;
-        margin-left: -20rem;
+        left: -20rem;
     }
 
     .app-container {
