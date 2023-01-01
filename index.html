@@ -28,18 +28,18 @@
             </div>
           </div>
           <div class="chat-body">
-            <p class="chat-item chat-bubble chat-left">That sounds great. I’d be happy with that.</p>
-            <p class="chat-item chat-bubble chat-left">Could you send over some pictures of your dog, please?</p>
-            <div class="chat-item chat-images chat-right">
+            <p class="chat-item chat-bubble chat-left hide">That sounds great. I’d be happy with that.</p>
+            <p class="chat-item chat-bubble chat-left hide">Could you send over some pictures of your dog, please?</p>
+            <div class="chat-item chat-images chat-right hide">
               <img src="./assets/images/dog-image-1.jpg" alt="Dog picutre" class="chat-image">
               <img src="./assets/images/dog-image-2.jpg" alt="Dog picutre" class="chat-image">
               <img src="./assets/images/dog-image-3.jpg" alt="Dog picutre" class="chat-image">
             </div>
-            <p class="chat-item chat-bubble chat-right">Here are a few pictures. She’s a happy girl!</p>
-            <p class="chat-item chat-bubble chat-right">Can you make it?</p>
-            <p class="chat-item chat-bubble chat-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-            <p class="chat-item chat-bubble chat-left chat-option"><i class="fa fa-circle-thin" aria-hidden="true"></i>30 minute walk <span class="price">$29</span></p>
-            <p class="chat-item chat-bubble chat-left chat-option"><i class="fa fa-circle-thin" aria-hidden="true"></i>1 hour walk <span class="price">$49</span></p>
+            <p class="chat-item chat-bubble chat-right hide">Here are a few pictures. She’s a happy girl!</p>
+            <p class="chat-item chat-bubble chat-right hide">Can you make it?</p>
+            <p class="chat-item chat-bubble chat-left hide">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            <p class="chat-item chat-bubble chat-left chat-option hide"><i class="fa fa-circle-thin" aria-hidden="true"></i>30 minute walk <span class="price">$29</span></p>
+            <p class="chat-item chat-bubble chat-left chat-option hide"><i class="fa fa-circle-thin" aria-hidden="true"></i>1 hour walk <span class="price">$49</span></p>
           </div>
           <div class="chat-footer">
             <div class="chat-footer-content">
@@ -58,5 +58,18 @@
       </p>
     </div>
   </div>
+  <script>
+    const chatItems = document.querySelectorAll(".chat-item");
+
+    function showChatItem(i) {
+      chatItems.item(i).classList.remove("hide");
+      i++;
+      if (i < chatItems.length) {
+        setTimeout(showChatItem, (i + 1 < chatItems.length) ? 1000: 400, i);
+      }
+    }
+
+    setTimeout(showChatItem, 600, 0);
+  </script>
 </body>
 </html>
