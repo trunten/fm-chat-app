@@ -214,7 +214,7 @@ body {
     .grid-container {
         grid-template-columns: 90vw;
         grid-template-rows: 600px 1fr;
-        row-gap: 0px;
+        row-gap: 20px;
     }
 
     .main-content h1, .main-content p {
@@ -229,5 +229,4 @@ body {
     .app-container {
         transform: scale(0.7);
     }
-
 }
